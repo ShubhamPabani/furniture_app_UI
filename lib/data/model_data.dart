@@ -2,7 +2,7 @@ import 'package:furniture_ui/model/model.dart';
 
 List<Model> models = [
   Model(
-    name: 'Stylish Lamp',
+    name: 'Stylish Sofa',
     image: [
       'assets/images/04.png',
       'assets/images/02.png',
@@ -11,7 +11,7 @@ List<Model> models = [
     ],
     price: '\$20.00',
     description: 'We have amazing Quality Lamp Wide range',
-    category: 'Lamp',
+    category: 'Sofa',
   ),
   Model(
     name: 'Stylish Sofa',

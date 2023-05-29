@@ -17,7 +17,7 @@ class ItemCard extends StatelessWidget {
       },
       child: Container(
         height: 140.0,
-        margin: EdgeInsets.only(bottom: 30.0),
+        margin: EdgeInsets.only(bottom: 10.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -35,13 +35,13 @@ class ItemCard extends StatelessWidget {
                     model.name,
                     style: itemCardHeading,
                   ),
-                  SpaceVH(height: 10.0),
+                  SpaceVH(height: 8.0),
                   Text(
                     model.description,
                     maxLines: 3,
                     style: itemCardDes,
                   ),
-                  SpaceVH(height: 20.0),
+                  SpaceVH(height: 10.0),
                   Text(
                     model.price,
                     style: itemCardPrice,
@@ -51,7 +51,7 @@ class ItemCard extends StatelessWidget {
             ),
             IconButton(
               onPressed: () {},
-              splashColor: Colors.transparent,
+              splashColor: Colors.red,  // Favorite icon will splash red when tap
               icon: Icon(
                 Icons.favorite_border_outlined,
               ),

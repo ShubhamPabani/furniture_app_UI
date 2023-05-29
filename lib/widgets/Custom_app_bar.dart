@@ -4,6 +4,7 @@ import 'package:furniture_ui/core/color.dart';
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({Key? key}) : super(key: key);
 
+  // Cart Icon Design
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -19,15 +20,15 @@ class CustomAppBar extends StatelessWidget {
             onTap: () {},
             splashColor: white,
             child: Container(
-              height: 65.0,
+              height: 60.0,
               width: 50.0,
               decoration: BoxDecoration(
                 color: green,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(20.0),
-                  topRight: Radius.circular(10.0),
+                  topRight: Radius.circular(5.0),
                   bottomLeft: Radius.circular(20.0),
-                  bottomRight: Radius.circular(50.0),
+                  bottomRight: Radius.circular(5.0),
                 ),
               ),
               child: Icon(

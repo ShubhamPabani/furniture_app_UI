@@ -19,7 +19,7 @@ class _TabBarButtonState extends State<TabBarButton> {
       children: [
         for (int i = 0; i < tabBarMenu.length; i++)
           InkWell(
-            splashColor: Colors.transparent,
+            splashColor: Colors.yellow,     // All, chairs, lamps, tables box color change when tap
             onTap: () {
               setState(() {
                 id = tabBarMenu[i].id;
@@ -29,8 +29,8 @@ class _TabBarButtonState extends State<TabBarButton> {
               height: 40.0,
               padding: EdgeInsets.symmetric(horizontal: 20.0),
               decoration: BoxDecoration(
-                color: id == i ? gray : Colors.transparent,
-                borderRadius: BorderRadius.circular(50.0),
+                color: id == i ? gray : Colors.white,  // All, chairs, lamps, tables box color change
+                borderRadius: BorderRadius.circular(80.0),
               ),
               child: Center(
                 child: Text(

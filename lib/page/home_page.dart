@@ -13,24 +13,26 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: white,
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20.0),
+        padding: EdgeInsets.symmetric(horizontal: 2.0),  // in single line heading
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             CustomAppBar(),
             Text(
-              'Furniture in\nunique style',
+              'Furniture in Unique Style',
               style: heading,
             ),
-            SpaceVH(height: 10),
-            Text(
-              'We have wide rang of Furniture',
-              style: subHeading,
+            SpaceVH(height: 30),
+            Center(
+              child: Text(
+                'We have wide rang of Furniture',
+                style: subHeading,
+              ),
             ),
-            SpaceVH(height: 20),
+            SpaceVH(height: 20),  // space between heading and sub heading
             Container(
-              height: 70.0,
+              height: 50.0,
               child: TabBarButton(),
             ),
             Expanded(
