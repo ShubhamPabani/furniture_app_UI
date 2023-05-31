@@ -1,4 +1,4 @@
-# furniture_ui
+# Furniture App UI
 
 A new Flutter project.
 
